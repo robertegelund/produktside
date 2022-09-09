@@ -12,7 +12,7 @@ const closeBasket = document.querySelector(".close-basket");
 const keyframesScale = [
     { transform: "scale(1.4)" },
     { transform: "scale(1.0)" },
-    ];
+];
 
 const settings = {
     duration: 500,
@@ -34,8 +34,8 @@ function addOrangeToBasket() {
     `;
 
     sums.push(phoneToBuyOrange.dataset.price);
-    
     count.animate(keyframesScale, settings);
+    basketOverview.style.visibility = "visible";
     basketOverview.style.animation = "comeDownGetUp 4s";
 
     for (let i=0; i<sums.length; i++) {
@@ -47,9 +47,6 @@ function addOrangeToBasket() {
     buy = basketOverview.querySelectorAll(".bought");
     buyNumber = buy.length;
     count.innerHTML = buyNumber;
-
-    console.log(sums)
-    console.log(totSum)
 }
 
 function addGreenToBasket () {
@@ -61,10 +58,9 @@ function addGreenToBasket () {
     `;
 
     sums.push(phoneToBuyGreen.dataset.price);
-    console.log(sums);
-
     count.animate(keyframesScale, settings);
-    basketOverview.style.animation = "comeDownGetUp 5s";
+    basketOverview.style.visibility = "visible";
+    basketOverview.style.animation = "comeDownGetUp 4s";
 
     for (let i=0; i<sums.length; i++) {
         totalSum += Number(sums[i]);
@@ -75,13 +71,11 @@ function addGreenToBasket () {
     buy = basketOverview.querySelectorAll(".bought");
     buyNumber = buy.length;
     count.innerHTML = buyNumber;
-
-    console.log(sums)
-    console.log(totSum)
 }
 
 function showBasketOverview() {
     basketOverview.style.animation = "comeDown 1s forwards";
+    basketOverview.style.visibility = "visible";
 }
 function hideBasketOverview() {
     basketOverview.style.animation = "getUp 1s forwards"
@@ -89,5 +83,5 @@ function hideBasketOverview() {
 
 buyBtnOrange.addEventListener("click", addOrangeToBasket);
 buyBtnGreen.addEventListener("click", addGreenToBasket);
-basket.addEventListener("click", showBasketOverview)
-closeBasket.addEventListener("click", hideBasketOverview)
+basket.addEventListener("click", showBasketOverview);
+closeBasket.addEventListener("click", hideBasketOverview);

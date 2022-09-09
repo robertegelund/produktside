@@ -79,6 +79,7 @@ function showBasketOverview() {
 }
 function hideBasketOverview() {
     basketOverview.style.animation = "getUp 1s forwards"
+    basketOverview.style.visibility = "hidden";
 }
 
 buyBtnOrange.addEventListener("click", addOrangeToBasket);

@@ -1,0 +1,81 @@
+.basket-overview {
+    position: absolute;
+    top: -40vh;
+    background-color: rgba(172, 135, 107, 0.8);
+    height: 22vh;
+    width: 30vw;
+    overflow: scroll;
+    display: flex;
+}
+
+.close-basket {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    color: white;
+    font-size: 13px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.basket-list {
+    padding: 30px;
+    font-size: 14px;
+    list-style: none;
+}
+
+.bought {
+    padding: 5px;
+    margin: 8px;
+    background-color: rgba(0,0,0,0.6);
+    color:white;
+    display: flex;
+    font-weight: 200;
+}
+
+.bought-name-orange {
+    margin-right: 30px;
+}
+
+.bought-name-green {
+    margin-right: 41px;
+}
+
+.totsum {
+    color: white;
+    margin-top: 40px;
+    margin-right: 20px;
+    font-weight: 200;
+}
+
+@keyframes comeDownGetUp {
+    0% {
+        top: -40vh;
+    }
+    20% {
+        top: 0;
+    }
+    80% {
+        top: 0;
+    }
+    100% {
+        top: -40vh;
+    }
+}
+
+@keyframes comeDown {
+    to {
+        top: 0;
+    }
+}
+
+@keyframes getUp {
+    from {
+        top: 0;
+    }
+    to {
+        top: -40vh;
+    }
+}
+

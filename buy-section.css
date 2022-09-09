@@ -1,0 +1,78 @@
+.buy-section {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.buy-info {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 80vw;
+    align-items: center;
+    justify-items: center;
+}
+
+.buy-info div {
+    margin-top: 120px;
+}
+
+.phone-infotext {
+    font-size: 16px;
+    color: white;
+    font-weight: 200;
+    line-height: 1.5;
+    margin-bottom: 25px;
+}
+
+.phone-to-buy-front, .phone-to-buy-back {
+    width: 190px;
+    margin-top: 100px;
+}
+
+.buy-phone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.phone-to-buy-back {
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+.buy-btn {
+    height: 40px;
+    width: 125px;
+    border-radius: 3px;
+    background-color: black;
+    border: 1px solid white;
+    color: rgba(172, 135, 107, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    font-size: 16px;
+    z-index: 99;
+}
+
+.buy-btn span {
+  font-size: 12px;
+  color: red;
+  font-weight: 200;
+}
+
+.buy-btn:hover {
+    background-color: rgba(172, 135, 107, 0.8);
+    color: white;
+}
+
+.buy-btn:hover span {
+    color: white;
+}

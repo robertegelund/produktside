@@ -1,0 +1,121 @@
+.phones-intro {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.phone {
+    position: absolute;
+    padding: 30px;
+    top: 10vh;
+}
+
+.phone-green {
+    animation: leftRight 2s linear forwards;
+}
+
+.phone-orange {
+    animation: rightLeft 2s linear forwards;
+}
+
+.phone-intro {
+    max-width: 30vw;
+    position: absolute;
+    top: 30vh;
+    left: 15vw;
+}
+
+.phone-firstheading {
+    font-size: 52px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 10px;
+
+    opacity: 0;
+    animation: showText 2.5s linear forwards;
+    animation-delay: 3.5s;
+}
+
+.new {
+    color: rgb(00, 82, 94);
+}
+
+.phone-secondheading {
+    font-size: 30px;
+    color:rgb(231, 116, 64);
+    font-weight: 200;
+    padding: 10px;
+
+    opacity: 0;
+    animation: showText 2.5s linear forwards;
+    animation-delay: 4s;
+}
+
+@keyframes leftRight {
+    0% {
+        left: 0vw;
+    }
+    50% {
+        left: 50vw;
+    }
+    70% {
+        transform: rotate(2.5deg);
+    }
+    75% {
+        transform: rotate(-2.5deg);
+    }
+    80% {
+        transform: rotate(2.5deg);
+    }
+    85% {
+        transform: rotate(-2.5deg);
+    }
+    90% {
+        transform: rotate(2.5deg);
+    }
+    95% {
+        transform: rotate(-2.5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        left: 50vw;
+    }
+}
+
+@keyframes rightLeft {
+    0% {
+        right: 0vw;
+    }
+    50% {
+        right: 50vw;
+    }
+    70% {
+        transform: rotate(2.5deg);
+    }
+    75% {
+        transform: rotate(-2.5deg);
+    }
+    80% {
+        transform: rotate(2.5deg);
+    }
+    85% {
+        transform: rotate(-2.5deg);
+    }
+    90% {
+        transform: rotate(2.5deg);
+    }
+    95% {
+        transform: rotate(-2.5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        right: 50vw;
+    }
+}
+
+@keyframes showText {
+    to {
+        opacity: 1;
+    }
+}

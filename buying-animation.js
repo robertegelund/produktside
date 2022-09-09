@@ -34,8 +34,7 @@ function addOrangeToBasket() {
 
     sums.push(phoneToBuyOrange.dataset.price);
     count.animate(keyframesScale, settings);
-    basketOverview.style.visibility = "visible";
-    basketOverview.style.animation = "comeDownGetUp 4s";
+    showBasketOverview();
 
     for (let i=0; i<sums.length; i++) {
         totalSum += Number(sums[i]);
@@ -58,8 +57,7 @@ function addGreenToBasket () {
 
     sums.push(phoneToBuyGreen.dataset.price);
     count.animate(keyframesScale, settings);
-    basketOverview.style.visibility = "visible";
-    basketOverview.style.animation = "comeDownGetUp 4s";
+    showBasketOverview();
 
     for (let i=0; i<sums.length; i++) {
         totalSum += Number(sums[i]);

@@ -24,7 +24,6 @@ let buyNumber = 0;
 let sums = [];
 let totalSum = 0;
 
-
 function addOrangeToBasket() {
     basketList.innerHTML += `
         <li class="bought">
@@ -76,6 +75,7 @@ function addGreenToBasket () {
 function showBasketOverview() {
     basketOverview.style.animation = "comeDown 1s forwards";
     basketOverview.style.visibility = "visible";
+    basketOverview.style.position = "fixed";
 }
 
 function hideBasketOverview() {

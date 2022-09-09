@@ -77,6 +77,7 @@ function showBasketOverview() {
     basketOverview.style.animation = "comeDown 1s forwards";
     basketOverview.style.visibility = "visible";
 }
+
 function hideBasketOverview() {
     basketOverview.style.animation = "getUp 1s forwards"
     basketOverview.style.visibility = "hidden";

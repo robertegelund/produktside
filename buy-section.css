@@ -48,18 +48,18 @@
 
 .buy-btn {
     height: 40px; width: 125px;
+    font-size: 16px; letter-spacing: 2px;
+    color: rgba(172, 135, 107, 0.8);
     border-radius: 3px;
     background-color: black;
     border: 1px solid white;
-    color: rgba(172, 135, 107, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    letter-spacing: 2px;
-    font-size: 16px;
     z-index: 99;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .buy-btn span {
